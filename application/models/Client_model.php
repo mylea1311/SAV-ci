@@ -1,6 +1,9 @@
 <?php
 class Client_model extends CI_Model
 {
+
+
+
    public function __construct()
    {
       $this->load->database();
@@ -9,7 +12,7 @@ class Client_model extends CI_Model
    /////////////////////////////////////////////////////
    //récupere les indos dans la bdd en fonction de l'id 
    ///////////////////////////////////////////////////
-   public function get_client($id = 0)
+   public function getclient($id = 0)
    {
       if ($id <= 0) {
          $query = $this->db->get('client');
@@ -29,6 +32,7 @@ class Client_model extends CI_Model
          'mail' => $this->input->post('mail')
       );
 
+      
       if ($id <= 0) {
          //insert 
          $query = $this->db->insert('client', $data);
@@ -37,6 +41,12 @@ class Client_model extends CI_Model
       // update
       $this->db->where('clientId', $id);
       $query = $this->db->update('client', $data);
+      return $query;
+   }
+
+   public function delete($id)
+   {
+      $query = $this->db->delete('client', array('clientId' => $id));
       return $query;
    }
 }
