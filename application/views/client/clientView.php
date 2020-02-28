@@ -27,11 +27,18 @@
                <td><?= $client['adresse'] ?></td>
                <td><?= $client['numTel'] ?></td>
                <td><?= $client['mail'] ?></td>
-               <td><button type="button" class="btn btn-outline-danger" href="<?php echo site_url('/client/delete/' . $client['clientId']); ?>">Supprimer</button>
-                  <button type="button" class="btn btn-outline-primary" href="<?php echo site_url('client/update/' . $client['clientId']); ?>">Modifier</button></td>
+               <td>
+                  <a href="<?php echo site_url('client/delete/' . $client['clientId']); ?>"> <button type="button" class="btn btn-outline-danger">Supprimer</button></a>
+                  <a href="<?php echo site_url('client/update/' . $client['clientId']); ?>"><button type=" button" class="btn btn-outline-primary">Modifier</button></a></td>
                </td>
 
+
+
+
             <?php endforeach ?>
+
+
       </tbody>
    </table>
+   <a href="<?php echo site_url('client/create'); ?>"><button type="button" class="btn btn-outline-success">Créer</button></a>
 </div>

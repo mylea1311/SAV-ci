@@ -4,7 +4,6 @@
 <table>
    <tr>
       <td><?php echo $client['nomClient']; ?> </td>
-
    </tr>
 
 </table>

@@ -89,6 +89,6 @@ class Client extends CI_Controller
    {
       $this->client_model->delete($id);
 
-      redirect(base_url('client'));
+      redirect(base_url('index.php'));
    }
 }
