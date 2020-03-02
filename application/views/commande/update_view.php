@@ -20,7 +20,7 @@
    <input type="number" name="fk_clientId" class="form-control" value="<?php echo $commande['fk_clientId']; ?>" />
 
    <br>
-   <input type="submit" name="submit" value="modifier" class="btn btn-primary" />
+   <a href="index.php"><input type="submit" name="submit" value="modifier" class="btn btn-primary" /></a>
    <input type="submit" name="submit" onClick="history.back()" value="retour" class="btn btn-secondary" />
    </form>
 </div>
