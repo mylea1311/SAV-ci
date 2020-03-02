@@ -13,7 +13,7 @@
             <th scope="col">adresse</th>
             <th scope="col">telephone</th>
             <th scope="col">mail</th>
-            <th scope="col">BOUTON</th>
+
 
          </tr>
 
@@ -28,6 +28,7 @@
                <td><?= $client['numTel'] ?></td>
                <td><?= $client['mail'] ?></td>
                <td>
+                  <a href="<?php echo site_url('client/client/' . $client['clientId']); ?>"> <button type="button" class="btn btn-outline-dark">Voir</button></a>
                   <a href="<?php echo site_url('client/delete/' . $client['clientId']); ?>"> <button type="button" class="btn btn-outline-danger">Supprimer</button></a>
                   <a href="<?php echo site_url('client/update/' . $client['clientId']); ?>"><button type=" button" class="btn btn-outline-primary">Modifier</button></a></td>
                </td>

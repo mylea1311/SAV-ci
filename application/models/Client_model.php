@@ -10,7 +10,7 @@ class Client_model extends CI_Model
    }
 
    /////////////////////////////////////////////////////
-   //récupere les indos dans la bdd en fonction de l'id 
+   //récupere les infos dans la bdd en fonction de l'id 
    ///////////////////////////////////////////////////
    public function getclient($id = 0)
    {
@@ -32,7 +32,7 @@ class Client_model extends CI_Model
          'mail' => $this->input->post('mail')
       );
 
-      
+
       if ($id <= 0) {
          //insert 
          $query = $this->db->insert('client', $data);

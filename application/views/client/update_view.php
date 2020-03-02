@@ -23,6 +23,6 @@
    <input type="email" name="mail" class="form-control" value="<?php echo $client['mail']; ?>" />
    <br>
    <input type="submit" name="submit" value="modifier" class="btn btn-primary" />
-
+   <input type="submit" name="submit" onClick="history.back()" value="retour" class="btn btn-secondary" />
    </form>
 </div>

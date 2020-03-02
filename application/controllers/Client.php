@@ -10,7 +10,6 @@ class Client extends CI_Controller
       $this->load->model('client_model');
    }
 
-
    // METHODE VUE
    public function views()
    {

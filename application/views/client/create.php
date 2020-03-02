@@ -22,7 +22,7 @@
    <label for="mail">Mail</label>
    <input type="email" name="mail" class="form-control" />
    <br>
-   <input type="submit" name="submit" value="Créer" class="btn btn-primary" />
-
+   <input type="submit" name="submit" value="Créer" class="btn btn-success" />
+   <input type="submit" onClick="history.back()" value="retour" class="btn btn-secondary" />
    </form>
 </div>
