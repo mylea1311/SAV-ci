@@ -8,10 +8,11 @@
       <thead>
          <tr>
             <th scope="col">#</th>
-            <th scope="col">Nom de la produit</th>
-            <th scope="col">Date de la produit</th>
-            <th scope="col">Délivré</th>
-            <th scope="col">Client ID</th>
+            <th scope="col">Nom du produit</th>
+            <th scope="col">Description du produit</th>
+            <th scope="col">Quantité</th>
+            <th scope="col">Disponibilité</th>
+            <th scope="col">Prix du Produit</th>
 
 
          </tr>

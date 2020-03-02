@@ -7,20 +7,20 @@
 
 
 <div class="container">
-   <label for="NomProduit">Nom</label>
+   <label for="NomProduit">Nom du produit</label>
    <input type="input" class="form-control" name="nomProduit" />
 
-   <label for="DescriptProduit">Date</label>
+   <label for="DescriptProduit">Description du produit</label>
    <input name="descriptProduit" class="form-control" />
 
-   <label for="QttProduit">Envoie</label>
+   <label for="QttProduit">Quantité</label>
    <input type="input" name="qttProduit" class="form-control" />
 
-   <label for="IsAvailable">Clients</label>
+   <label for="IsAvailable">Disponibilité</label>
    <input type="tel" name="isAvailable" class="form-control" />
 
-   
-   <label for="PrixProduit">Clients</label>
+
+   <label for="PrixProduit">Prix du Produit</label>
    <input type="tel" name="prixProduit" class="form-control" />
 
 
